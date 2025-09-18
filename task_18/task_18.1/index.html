@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //Task 1
+
+        cnt = Number(prompt("iki reqemli eded daxil edin: "))
+
+        while (cnt + 7 < 100) {
+            cnt += 7;
+        }
+
+        console.log("yekun deyer : " + cnt);
+
+
+        //-----------------------------------------------------------------------
+
+        //Task 2
+
+        let n = Number((prompt("eded daxil edin:")));
+        let i = 0;
+
+        while (i < n) {
+            console.log("I know how to use cycles");
+            i++;
+        }
+
+
+        //-----------------------------------------------------------------------
+
+        //Task 3
+
+        let num = 100;
+
+        while (num <= 999) {
+
+            if (num % 10 === 0) {
+                console.log(num);
+            }
+            num++;
+        }
+
+        //-----------------------------------------------------------------------
+
+        //Task 4
+
+        let cem = 10;
+        let sum = 0;
+
+        while (cem <= 99) {
+
+            if (cem % 2 !== 0) {
+                sum += cem;
+            }
+            cem++;
+        }
+
+        console.log("iki reqemli ededlerin cemi:", sum);
+
+        //-----------------------------------------------------------------------
+
+        //Task 5
+
+        let eded = Number(prompt("Ədədi daxil edin: "));
+        let summ = 0;
+        let z = 100;
+
+        while (z <= 999) {
+            if (z % eded === 0) {
+                summ += z;
+            }
+            z++;
+        }
+
+        console.log("Cəm:", summ);
+
+
+        //-----------------------------------------------------------------------
+
+
+        //Task 7
+
+        let hasil = 1;
+
+        for (let i = 1; i <= 10; i++) {
+            hasil *= i;
+        }
+
+        console.log("Hasil:", hasil);
+
+
+        //-----------------------------------------------------------------------
+
+        //Task 8
+
+        let text = prompt("metn daxil edin:");
+        let revers = "";
+
+        for (let i = text.length - 1; i >= 0; i--) {
+            revers += text[i];
+        }
+
+        console.log("metn tersine cevrildi:", revers);
+
+        //-----------------------------------------------------------------------
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+
+    <script>
+
+        // task 1
+
+        // console.log("My name is Ali");
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        // // ## Task-02
+
+
+        // let name = "Ali";
+
+        // console.log("Welcome " + name);
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        //Task 3
+
+
+        // person , $add
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        //Task 4
+
+
+        // let book_price = 15;
+        // let book_amount = 20;
+
+        // let total_value = book_price * book_amount
+
+        // console.log("Depodaki kitablarin umumi deyeri: " + total_value + " Azn");
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        // //Task 5
+
+
+        // let kmhSpeed = 120;
+        // let msSpeed = kmhSpeed / 3.6;
+
+        // console.log("Suret " + Math.round(msSpeed) + "m/s");
+
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        // //Task 6
+
+
+        // let birthDate = new Date(prompt("Doğum tarixinizi daxil edin (YYYY-MM-DD):"));
+        // let today = new Date();
+
+        // let diffMs = today - birthDate;
+        // let livedDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+        // console.log("Siz " + livedDays + " gündür ki, yaşıyırsınız.");
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        // //Task 7
+
+        // let num = 15;
+
+        // console.log("Beşinci dərəcə qüvvət: " + num ** 5);
+        // console.log("3-ə bölünmədən qalan qalığı: " + (num % 3));
+
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        //Task 8
+
+        // let firstName = "Ali";
+        // let lastName = "Aliyev";
+
+        // console.log("Sizin adınız " + firstName + " " + lastName + ". Tanışlığımıza çox şadam!");
+
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        //Task 9
+
+        // console.log(`Sizi bir daha görməyimizə şadıq, ${firstName} ${lastName}`);
+
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        //Task 10
+
+        // let fullName = "Ali Aliyev";
+        // let lettersCount = fullName.replace(/\s/g, "").length;
+
+        // console.log("Adınızdakı hərflərin sayı: " + lettersCount);
+
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        // // Task 12
+
+        // let parts = fullName.split(" ");
+        // console.log(parts[1] + " " + parts[0]);
+
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        // //Task 13
+
+        // let Name = prompt("Adınızı daxil edin:");
+        // console.log("Salam, " + Name + "!");
+
+        // //--------------------------------------------------------------------------------------------------------------------------------
+
+        // // Task 14
+
+        // let a = Number(prompt("Birinci ədədi daxil edin:"));
+        // let b = Number(prompt("İkinci ədədi daxil edin:"));
+
+        // console.log("Toplama: " + (a + b));
+        // console.log("Çıxma: " + (a - b));
+        // console.log("Vurma: " + (a * b));
+        // console.log("Bölmə: " + (a / b));
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        //Task 15
+
+        // let x = 12345;
+        // let z = 98765;
+        // let total = x * z;
+        // convert_str = String(total);
+
+
+        // console.log(convert_str[6]);
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        //Task 16
+
+        // Əməliyyatların nəticəsini müəyyənləşdirin.
+
+
+        // // "" + 1 + 0 = "10"
+        // // "" - 1 + 0 = -1 
+        // // "true" - false = NaN
+        // // 6 / "3" = 2
+        // // 4 + 5 + "px" = 9px
+        // // "$" + 4 + 5 = $45
+        // // "4" - 2 = 2
+        // // NaN + "px" = Nanpx
+        // // 7 / 0 = infinity
+        // // "-9" + 5 = -95
+        // // "-9" - 5 = -14
+        // // null + 1 = 1
+        // // undefined + 1 = Nan
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        // let numVal = (prompt("4 reqemli eded daxil edin!"))
+
+        // console.log(+num[0] + +num[1] + +num[2] + +num[3]);
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        // //Task 19
+
+        // let price = prompt("Qiyməti daxil edin:");
+
+        // let parts = price.split(".");
+
+        // let manat = parts[0];
+        // let qepik = parts[1];
+
+        // console.log(`${manat} manat ${qepik} qəpik`);
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        // //Task 21
+
+        // const ad = prompt("Adinizi daxil edin:");
+
+        // const splt = input.split(" ");
+
+        // const surname = splt[0];
+
+        // const index = splt[1][0] + "." + splt[2][0] + ".";
+
+        // const result = surname + " " + index;
+
+        // console.log(result);
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        //Task 23
+
+        let val = 20;
+
+        console.log(val < 15);
+        console.log(val <= 10);
+        console.log(val !== 20);
+        console.log(val === 10);
+        console.log(val < 20);
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        //Task 24
+
+        let age = prompt("Yashinizi qeyd edin: ");
+
+        if (age < 18) {
+            console.log();
+            ("Access denied");
+        } else {
+            console.log();
+            ("Access....");
+        }
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        //Task 26
+
+        let year = prompt("İli daxil edin:");
+
+        if (year % 4 === 0) {
+            console.log("İl uzun ildir");
+        } else {
+            console.log("İl uzun il deyil");
+        }
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        //Task 28
+
+        let gen = prompt("Cinsinizi daxil edin: ");
+
+        let gender;
+        if (gen === "M" || "m") {
+            gender = "male";
+        } else if (gen === "F" || "f") {
+            gender = "female";
+        } else {
+            gender = "yalnis melumat!!!";
+        }
+
+        console.log(gender);
+
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+        //Task 29
+
+        let month = +prompt("Ayi daxil edin: ");
+
+        let months = [
+            "Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun",
+            "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"
+        ];
+
+        if (month >= 1 && month <= 12) {
+            console.log(months[month - 1]);
+
+        } else {
+            console.log("Yanlish ay!");
+        }
+
+        //--------------------------------------------------------------------------------------------------------------------------------
+
+
+        //Task 34
+
+        let num = 0;
+
+        if (num > 0) {
+            console.log("Müsbet");
+        } else if (num < 0) {
+            console.log("Menfi");
+        } else {
+            console.log("Sifir");
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
