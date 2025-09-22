@@ -149,6 +149,86 @@
 
         console.log(index);
 
+        //-----------------------------------------------------------------------
+
+        //Task 11
+
+        let word = "level";
+        let rever = "";
+        for (let i = word.length - 1; i >= 0; i--) {
+            reversed += word[i];
+        }
+        console.log(word === rever);
+
+        //-----------------------------------------------------------------------
+
+        //Task 12
+
+        let reqem = 100;
+
+        while (reqem <= 500) {
+
+            if (reqem % 5 === 2) {
+                console.log(reqem);
+            }
+            reqem++;
+        }
+
+        //-----------------------------------------------------------------------
+
+        //Task 13
+
+        let number = 453;
+        let snum = 0;
+        let str = number.toString();
+
+        for (let i = 0; i < str.length; i++) {
+            snum += parseInt(str[i]);
+        }
+        console.log(snum);
+
+
+        //-----------------------------------------------------------------------
+
+        //Task 14
+
+        let y = 12;
+        for (let i = y; i >= 1; i--) {
+
+            if (y % i === 0) {
+                console.log(i);
+            }
+        }
+
+
+        //-----------------------------------------------------------------------
+
+        //Task 15
+
+        for (let i = 1; i <= 30; i++) {
+
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log(i);
+            }
+        }
+
+
+        //-----------------------------------------------------------------------
+
+        //Task 16
+
+        let txt1 = "test";
+        let result = "";
+
+        for (let i = 0; i < txt1.length; i++) {
+
+            result += txt1[i];
+
+            if (i !== txt1.length - 1) {
+                result += "-";
+            }
+        }
+        console.log(result);
 
 
     </script>
