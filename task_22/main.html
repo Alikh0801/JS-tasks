@@ -75,55 +75,55 @@
         /* ------------------------------------------------------------- */
         //task 4
 
-        let client = {
-            fullName: "Ali Aliyev",
-            creditLimit: 2000,
-            balance: 1000,
-            percentOfMinPayment: 0.12,
+        // let client = {
+        //     fullName: "Ali Aliyev",
+        //     creditLimit: 2000,
+        //     balance: 1000,
+        //     percentOfMinPayment: 0.12,
 
-            getBalance: function () {
+        //     getBalance: function () {
 
-                if (this.balance >= 0) {
+        //         if (this.balance >= 0) {
 
-                    return `Balansiniz: ${this.balance}`;
-                } else {
-                    return `Borcunuz: ${Math.abs(this.balance)}`;
-                }
-            },
+        //             return `Balansiniz: ${this.balance}`;
+        //         } else {
+        //             return `Borcunuz: ${Math.abs(this.balance)}`;
+        //         }
+        //     },
 
-            getMinPayment: function () {
-                if (this.balance < 0) {
+        //     getMinPayment: function () {
+        //         if (this.balance < 0) {
 
-                    let debt = Math.abs(this.balance);
-                    let minPay = debt * this.percentOfMinPayment;
+        //             let debt = Math.abs(this.balance);
+        //             let minPay = debt * this.percentOfMinPayment;
 
-                    return `Minimum odenishiniz: ${minPay}`;
-                } else {
-                    return "Sizin borcunuz yoxdur";
-                }
-            },
+        //             return `Minimum odenishiniz: ${minPay}`;
+        //         } else {
+        //             return "Sizin borcunuz yoxdur";
+        //         }
+        //     },
 
-            withdraw: function (amount) {
+        //     withdraw: function (amount) {
 
-                let available = this.balance + this.creditLimit;
-                if (amount <= available) {
-                    this.balance -= amount;
-                    console.log(`Hesabdan ${amount} AZN cixarildi. Yeni balans: ${this.balance}`);
-                } else {
-                    console.log("Kifayet qeder balans yoxdur!");
-                }
-            },
+        //         let available = this.balance + this.creditLimit;
+        //         if (amount <= available) {
+        //             this.balance -= amount;
+        //             console.log(`Hesabdan ${amount} AZN cixarildi. Yeni balans: ${this.balance}`);
+        //         } else {
+        //             console.log("Kifayet qeder balans yoxdur!");
+        //         }
+        //     },
 
-            refill: function (amount) {
-                this.balance += amount;
-                console.log(`Hesaba ${amount} AZN elave edildi. Yeni balans: ${this.balance}`);
-            }
-        };
+        //     refill: function (amount) {
+        //         this.balance += amount;
+        //         console.log(`Hesaba ${amount} AZN elave edildi. Yeni balans: ${this.balance}`);
+        //     }
+        // };
 
         // console.log(client.getBalance());
 
-        client.withdraw(2500);
-        console.log(client.getBalance());
+        // client.withdraw(2500);
+        // console.log(client.getBalance());
 
         // console.log(client.getMinPayment());
 
